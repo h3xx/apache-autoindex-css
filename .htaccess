@@ -1,0 +1,12 @@
+<FilesMatch "^\.git.*|Makefile$">
+	Deny from all
+</FilesMatch>
+AddDescription "Directory listing styles" autoindex.css
+# Keep authz errors from filling up the log
+IndexIgnore \
+	.git \
+	.gitignore \
+	.gitmodules \
+	.htaccess \
+	Makefile \
+	src
