@@ -60,11 +60,12 @@
 }
 
 .fadeDown {
-    -webkit-animation: fadeDown 1s ease;
-    -moz-animation: fadeDown 1s ease;
-    -ms-animation: fadeDown 1s ease;
-    -o-animation: fadeDown 1s ease;
-    animation: fadeDown 1s ease;
+    $animation: fadeDown 1s ease;
+    -webkit-animation: $animation;
+    -moz-animation: $animation;
+    -ms-animation: $animation;
+    -o-animation: $animation;
+    animation: $animation;
 
     // Center elements in error pages
     .center {

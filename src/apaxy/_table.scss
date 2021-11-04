@@ -55,11 +55,12 @@ td {
     border: 0;
     vertical-align: middle;
     text-align: left;
-    transition: background 300ms ease;
-    -o-transition: background 300ms ease;
-    -ms-transition: background 300ms ease;
-    -moz-transition: background 300ms ease;
-    -webkit-transition: background 300ms ease;
+    $transition: background 300ms ease;
+    transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    -moz-transition: $transition;
+    -webkit-transition: $transition;
     @include dark-mode() {
         border-color: #424242;
     }
