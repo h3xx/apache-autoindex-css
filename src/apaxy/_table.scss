@@ -55,11 +55,6 @@ th + th + th + th {
     width: 5%;
 }
 
-tr td:first-of-type {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 td {
     padding: 5px 0;
     outline: 0;
@@ -74,6 +69,11 @@ td {
     -webkit-transition: $transition;
     @include dark-mode() {
         border-color: #424242;
+    }
+
+    &.indexcolicon {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     a {
