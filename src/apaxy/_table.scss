@@ -47,6 +47,7 @@ th {
 
 th {
     font-size: .75em;
+    white-space: nowrap;
 }
 
 td {
@@ -77,4 +78,9 @@ td {
 
 // 4th Column: Size
 .indexcolsize {
+}
+
+.indexcollastmod,
+.indexcolsize {
+    white-space: nowrap;
 }
