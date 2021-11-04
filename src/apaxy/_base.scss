@@ -1,0 +1,59 @@
+@import 'mixins';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+	color: #61666c;
+	background-color: #fff;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	line-height: 2em;
+	@include dark-mode() {
+		background-color: #232323;
+	}
+}
+
+body {
+	padding: 20px;
+	-webkit-backface-visibility: hidden;
+    @include small-screen() {
+        padding: 10px;
+    }
+}
+
+code {
+	font-family: consolas,monospace;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	&:hover {
+		color: #bababa;
+	}
+	@include dark-mode() {
+		color: #e9e9e9;
+		&:hover {
+			color: #696969;
+		}
+	}
+
+    & > img:hover {
+        opacity: 0.4;
+    }
+
+}
+
+a,
+img {
+	border: none;
+	outline: none;
+}

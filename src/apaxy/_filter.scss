@@ -1,0 +1,25 @@
+@import 'mixins';
+
+/*------------------------------------*\
+    Filter (search box)
+\*------------------------------------*/
+
+#filter {
+    background-color: rgba(0, 0, 0, 0.04);
+    float: right;
+    font-size:.75em;
+    padding: .5em;
+    margin-bottom: .5em;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: .25em;
+    width: 10em;
+    transition: width 0.25s ease;
+    @include dark-mode() {
+        background-color: rgba(255, 255, 255, 0.07);
+        border-color: rgba(255, 255, 255, 0.15);
+        color: white;
+    }
+    &:focus {
+        width: 14em;
+    }
+}

@@ -1,0 +1,11 @@
+@mixin dark-mode() {
+	@media (prefers-color-scheme: dark) {
+        @content;
+    }
+}
+
+@mixin small-screen() {
+    @media (max-width: 768px) {
+        @content;
+    }
+}

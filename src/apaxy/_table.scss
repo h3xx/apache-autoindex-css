@@ -1,0 +1,79 @@
+/*------------------------------------*\
+    Table (directory listing)
+\*------------------------------------*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .875em;
+    color: rgb(143, 143, 143);
+    @include dark-mode() {
+        color: rgb(111, 111, 111);
+    }
+}
+
+.odd {
+    background-color: rgb(244, 244, 244);
+    @include dark-mode() {
+        background-color: rgb(50, 50, 50);
+    }
+}
+
+tr {
+    outline: 0;
+    border: 0;
+}
+
+th {
+    text-align: left;
+    font-size: .75em;
+    padding-right: 20px;
+}
+
+// 2nd Column: Filename
+th + th {
+    width: 65%;
+}
+
+// 3rd Column: Last Modified
+th + th + th {
+}
+
+// 4th Column: Size
+th + th + th + th {
+    width: 5%;
+}
+
+tr td:first-of-type {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td {
+    padding: 5px 0;
+    outline: 0;
+    border: 0;
+    vertical-align: middle;
+    text-align: left;
+    transition: background 300ms ease;
+    -o-transition: background 300ms ease;
+    -ms-transition: background 300ms ease;
+    -moz-transition: background 300ms ease;
+    -webkit-transition: background 300ms ease;
+    @include dark-mode() {
+        border-color: #424242;
+    }
+
+    a {
+        display: block;
+    }
+}
+
+tr.parent a[href^="/"] {
+    color: #9099A3;
+}
+
+// TODO not parent dir link
+.parent a[href^="/"]:hover {
+    color: #2281d0;
+}
