@@ -22,6 +22,17 @@ table {
 tr {
     outline: 0;
     border: 0;
+
+    // Parent Directory links
+    &:nth-child(3) {
+        a[href^="/"] {
+            color: #9099A3;
+            &:hover {
+                color: #2281d0;
+            }
+        }
+    }
+
 }
 
 th {
@@ -68,13 +79,4 @@ td {
     a {
         display: block;
     }
-}
-
-tr.parent a[href^="/"] {
-    color: #9099A3;
-}
-
-// TODO not parent dir link
-.parent a[href^="/"]:hover {
-    color: #2281d0;
 }
