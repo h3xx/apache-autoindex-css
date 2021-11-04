@@ -1,3 +1,5 @@
+@import 'mixins';
+
 /*------------------------------------*\
     Table (directory listing)
 \*------------------------------------*/
@@ -61,12 +63,7 @@ td {
     border: 0;
     vertical-align: middle;
     text-align: left;
-    $transition: background 300ms ease;
-    transition: $transition;
-    -o-transition: $transition;
-    -ms-transition: $transition;
-    -moz-transition: $transition;
-    -webkit-transition: $transition;
+    @include transition(background 300ms ease);
     @include dark-mode() {
         border-color: #424242;
     }
