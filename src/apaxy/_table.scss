@@ -37,24 +37,16 @@ tr {
 
 }
 
+td,
 th {
     text-align: left;
+    &:not(.indexcolicon) {
+        padding-right: 5px;
+    }
+}
+
+th {
     font-size: .75em;
-    padding-right: 20px;
-}
-
-// 2nd Column: Filename
-th + th {
-    width: 65%;
-}
-
-// 3rd Column: Last Modified
-th + th + th {
-}
-
-// 4th Column: Size
-th + th + th + th {
-    width: 5%;
 }
 
 td {
@@ -62,18 +54,27 @@ td {
     outline: 0;
     border: 0;
     vertical-align: middle;
-    text-align: left;
     @include transition(background 300ms ease);
     @include dark-mode() {
         border-color: #424242;
     }
+}
 
-    &.indexcolicon {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+// 1st Column: Icon
+.indexcolicon {
+    width: 40px;
 
-    a {
+    img {
         display: block;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+}
+
+// 3rd Column: Last Modified
+.indexcollastmod {
+}
+
+// 4th Column: Size
+.indexcolsize {
 }
