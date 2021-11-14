@@ -80,12 +80,18 @@ table {
             display: none;
         }
 
-        &:first-child td {
-            border-top: none;
+        &:first-child {
+            td,
+            th {
+                border-top: none;
+            }
         }
 
-        &:last-child td {
-            border-bottom: none;
+        &:last-child {
+            td,
+            th {
+                border-bottom: none;
+            }
         }
 
         td:first-child,
@@ -104,6 +110,7 @@ table {
         text-align: left;
         vertical-align: middle;
         padding: 0.4em 0.6em;
+        border-top: $gray5-border;
 
         &.indexcolicon {
             padding: 0;
@@ -128,7 +135,6 @@ table {
     th {
         font-weight: 700;
         text-transform: none;
-        border-bottom: $gray5-border;
         // vertical-align: middle;
         padding: 0.7em 0.8em;
         // text-align: left;
