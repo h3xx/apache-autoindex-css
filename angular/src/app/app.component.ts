@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import {
+    Component,
+    ViewEncapsulation,
+} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    encapsulation: ViewEncapsulation.None,
+    selector: 'app-root',
+    styleUrls: ['./app.component.scss'],
+    templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'apache-css';
+    title = 'apache-css';
 }
