@@ -1,4 +1,6 @@
 $always-dark-mode: false !default;
 
-$gray1: #f7f7f7;
-$gray3: #f0f0f0;
+$gray1: #f7f7f7 !default;
+$gray3: #f0f0f0 !default;
+$gray5: #d4d4d4 !default;
+$gray5-border: 1px solid $gray5 !default;
