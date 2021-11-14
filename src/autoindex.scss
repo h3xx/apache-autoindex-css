@@ -1,4 +1,152 @@
-@import 'normalize.css/normalize';
-@import 'apaxy/base';
-@import 'apaxy/table';
-@import 'apaxy/small-screen';
+@import 'mixins';
+@import 'vars';
+
+html {
+    min-height: 100%;
+    color: #61666c;
+    background-color: $gray1;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.7em;
+    @include dark-mode() {
+        background-color: #232323;
+    }
+}
+
+a,
+img {
+    border: none;
+    outline: none;
+}
+
+body {
+    padding: 20px;
+    @include small-screen() {
+        padding: 10px;
+    }
+}
+
+h1,
+table {
+    width: 900px;
+    max-width: 95%;
+    margin: 1em auto;
+}
+
+h1 {
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(212, 212, 213);
+}
+
+table {
+    border-collapse: separate;
+    border-radius: .25rem;
+    border-spacing: 0;
+    border: 1px solid #d0d0d0;
+    box-shadow: none;
+    color: rgba(0, 0, 0, .8);
+    background: #fff;
+    @include dark-mode() {
+        color: rgba(255, 255, 255, .8);
+        background-color: #232323;
+    }
+
+    a {
+        font-weight: 600;
+        text-decoration: none;
+        color: rgba(0, 0, 0, .8);
+        @include dark-mode() {
+            color: rgba(255, 255, 255, .8);
+        }
+
+        & > img:hover {
+            opacity: 0.4;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #333;
+            @include dark-mode() {
+                color: #696969;
+            }
+        }
+
+    }
+
+    tr {
+        &.indexbreakrow {
+            display: none;
+        }
+
+        &:first-child td {
+            border-top: none;
+        }
+
+        &:last-child td {
+            border-bottom: none;
+        }
+
+        td:first-child,
+        th:first-child {
+            border-left: none;
+        }
+
+        td:last-child,
+        th:last-child {
+            border-right: none;
+        }
+    }
+
+    th, td {
+        transition: background .2s ease, border-color .2s ease, color .2s ease;
+        text-align: left;
+        vertical-align: middle;
+
+        &.indexcolicon {
+            text-align: center;
+        }
+
+        &:not(.indexcolname) {
+            border-left: 1px solid #d4d4d5;
+        }
+
+        // make links fill up the whole table cell
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    th {
+        font-weight: 700;
+        text-transform: none;
+        border-bottom: 1px solid #d4d4d5;
+        // vertical-align: middle;
+        padding: 0.7em 0.8em;
+        // text-align: left;
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        background: $gray3;
+        @include dark-mode() {
+            background: #0f0f0f;
+        }
+
+        &:hover {
+            background: rgba(0, 0, 0, .05);
+            @include dark-mode() {
+                background: rgba(255, 255, 255, .05);
+            }
+        }
+    }
+
+    td {
+        padding: 0.4em 0.6em;
+
+        a {
+            color: #616161;
+        }
+    }
+}

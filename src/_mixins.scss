@@ -1,0 +1,17 @@
+@import 'vars';
+
+@mixin dark-mode() {
+    @if $always-dark-mode {
+        @content;
+    } else {
+        @media (prefers-color-scheme: dark) {
+            @content;
+        }
+    }
+}
+
+@mixin small-screen() {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
