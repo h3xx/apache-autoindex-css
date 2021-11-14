@@ -103,6 +103,11 @@ table {
         transition: background .2s ease, border-color .2s ease, color .2s ease;
         text-align: left;
         vertical-align: middle;
+        padding: 0.4em 0.6em;
+
+        &.indexcolicon {
+            padding: 0;
+        }
 
         &.indexcolicon {
             text-align: center;
@@ -143,7 +148,6 @@ table {
     }
 
     td {
-        padding: 0.4em 0.6em;
 
         a {
             color: #616161;
