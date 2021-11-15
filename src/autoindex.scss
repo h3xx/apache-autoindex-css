@@ -14,6 +14,10 @@ html {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 a,
 img {
     border: none;
@@ -53,8 +57,6 @@ body {
     }
 
     a {
-        font-weight: 600;
-        text-decoration: none;
         color: $gray4;
         @include dark-mode() {
             color: rgba(255, 255, 255, .8);
