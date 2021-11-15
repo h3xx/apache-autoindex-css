@@ -27,20 +27,20 @@ body {
     }
 }
 
-h1,
-table {
+#indextitle,
+#indexlist {
     color: $black1;
     margin: 1em auto;
     max-width: 95%;
     width: 900px;
 }
 
-h1 {
+#indextitle {
     padding-bottom: 1em;
     border-bottom: $gray5-border;
 }
 
-table {
+#indexlist {
     border-collapse: separate;
     border-radius: .25rem;
     border-spacing: 0;
