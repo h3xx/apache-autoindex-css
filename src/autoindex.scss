@@ -143,14 +143,11 @@ body {
         }
 
         &.indexcolicon {
-            padding-top: 0;
             padding-bottom: 0;
             padding-right: 0;
-            width: 32px;
-        }
-
-        &.indexcolicon {
+            padding-top: 0;
             text-align: center;
+            width: 32px;
         }
 
         &:not(.indexcolname) {
