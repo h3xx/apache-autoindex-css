@@ -3,7 +3,7 @@
 @mixin dark-mode() {
     @if $always-dark-mode {
         @content;
-    } else {
+    } @else {
         @media (prefers-color-scheme: dark) {
             @content;
         }
