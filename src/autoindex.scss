@@ -29,9 +29,10 @@ body {
 
 h1,
 table {
-    width: 900px;
-    max-width: 95%;
+    color: $black1;
     margin: 1em auto;
+    max-width: 95%;
+    width: 900px;
 }
 
 h1 {
@@ -45,7 +46,6 @@ table {
     border-spacing: 0;
     border: $gray5-border;
     box-shadow: none;
-    color: rgba(0, 0, 0, .8);
     background: #fff;
     @include dark-mode() {
         color: rgba(255, 255, 255, .8);
@@ -55,7 +55,7 @@ table {
     a {
         font-weight: 600;
         text-decoration: none;
-        color: rgba(0, 0, 0, .8);
+        color: $gray4;
         @include dark-mode() {
             color: rgba(255, 255, 255, .8);
         }
@@ -76,9 +76,6 @@ table {
     }
 
     tr {
-        &.indexbreakrow {
-            display: none;
-        }
 
         &:first-child {
             td,
@@ -103,6 +100,20 @@ table {
         th:last-child {
             border-right: none;
         }
+
+        // Hide huge bars
+        &.indexbreakrow {
+            display: none;
+        }
+
+        // Row styling
+        &.even td {
+            background-color: $white;
+        }
+        &.odd td {
+            background-color: $gray1;
+        }
+
     }
 
     th, td {
@@ -154,9 +165,5 @@ table {
     }
 
     td {
-
-        a {
-            color: #616161;
-        }
     }
 }
