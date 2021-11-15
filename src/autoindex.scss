@@ -67,7 +67,7 @@ body {
         &:hover,
         &:focus,
         &:active {
-            color: #333;
+            color: $black1;
             @include dark-mode() {
                 color: #696969;
             }
