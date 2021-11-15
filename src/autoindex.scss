@@ -124,7 +124,10 @@ body {
         border-top: $gray5-border;
 
         &.indexcolicon {
-            padding: 0;
+            padding-top: 3.6px;
+            padding-bottom: 0;
+            padding-right: 0;
+            width: 32px;
         }
 
         &.indexcolicon {
