@@ -29,13 +29,13 @@ body {
 
 #indextitle,
 #indexlist {
-    color: $black1;
     margin: 1em auto;
     max-width: 95%;
     width: 900px;
 }
 
 #indextitle {
+    color: $black1;
     padding-bottom: 1em;
     border-bottom: $gray5-border;
 }
@@ -155,6 +155,7 @@ body {
         padding-left: 0.6em;
         padding-right: 0.6em;
         background-color: $gray3;
+        color: $black1;
         @include dark-mode() {
             background-color: #0f0f0f;
         }
