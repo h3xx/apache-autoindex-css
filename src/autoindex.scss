@@ -46,7 +46,7 @@ body {
     border-spacing: 0;
     border: $gray5-border;
     box-shadow: none;
-    background: #fff;
+    background-color: #fff;
     @include dark-mode() {
         color: rgba(255, 255, 255, .8);
         background-color: #232323;
@@ -151,15 +151,15 @@ body {
         // text-align: left;
         padding-left: 0.6em;
         padding-right: 0.6em;
-        background: $gray3;
+        background-color: $gray3;
         @include dark-mode() {
-            background: #0f0f0f;
+            background-color: #0f0f0f;
         }
 
         &:hover {
-            background: rgba(0, 0, 0, .05);
+            background-color: rgba(0, 0, 0, .05);
             @include dark-mode() {
-                background: rgba(255, 255, 255, .05);
+                background-color: rgba(255, 255, 255, .05);
             }
         }
     }
