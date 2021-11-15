@@ -60,16 +60,16 @@ body {
             color: rgba(255, 255, 255, .8);
         }
 
-        & > img:hover {
-            opacity: 0.4;
-        }
-
         &:hover,
         &:focus,
         &:active {
             color: $black1;
             @include dark-mode() {
                 color: #696969;
+            }
+
+            img {
+                opacity: 0.4;
             }
         }
 
