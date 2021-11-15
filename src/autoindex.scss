@@ -3,14 +3,15 @@
 
 html {
     min-height: 100%;
-    color: #61666c;
-    background-color: $gray1;
     font-weight: 400;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
     line-height: 1.7em;
+    background-color: $gray1;
+    color: $gray3;
     @include dark-mode() {
-        background-color: #232323;
+        background-color: $dkgray1;
+        color: $dkgray3;
     }
 }
 
@@ -39,35 +40,39 @@ body {
 }
 
 #indextitle {
-    color: $black1;
     padding-bottom: 1em;
     border-bottom: $gray4-border;
+    color: $gray5;
+    @include dark-mode() {
+        border-bottom: $dkgray4-border;
+        color: $dkgray5;
+    }
 }
 
 #indexlist {
     border-collapse: separate;
     border-radius: .25rem;
     border-spacing: 0;
-    border: $gray4-border;
     box-shadow: none;
-    background-color: #fff;
+    border: $gray4-border;
+    background-color: $gray0;
     @include dark-mode() {
-        color: rgba(255, 255, 255, .8);
-        background-color: #232323;
+        border: $dkgray4-border;
+        background-color: $dkgray0;
     }
 
     a {
         color: $gray3;
         @include dark-mode() {
-            color: rgba(255, 255, 255, .8);
+            color: $dkgray3;
         }
 
         &:hover,
         &:focus,
         &:active {
-            color: $black1;
+            color: $gray5;
             @include dark-mode() {
-                color: #696969;
+                color: $dkgray5;
             }
 
             img {
@@ -110,10 +115,16 @@ body {
 
         // Row styling
         &.even td {
-            background-color: $white1;
+            background-color: $gray0;
+            @include dark-mode() {
+                background-color: $dkgray0;
+            }
         }
         &.odd td {
             background-color: $gray1;
+            @include dark-mode() {
+                background-color: $dkgray1;
+            }
         }
 
     }
@@ -126,6 +137,9 @@ body {
 
         @if $internal-borders {
             border-top: $gray4-border;
+            @include dark-mode() {
+                border-top: $dkgray4-border;
+            }
         }
 
         &.indexcolicon {
@@ -141,6 +155,9 @@ body {
 
         &:not(.indexcolname) {
             border-left: $gray4-border;
+            @include dark-mode() {
+                border-left: $dkgray4-border;
+            }
         }
 
         // make links fill up the whole table cell
@@ -159,18 +176,22 @@ body {
         // text-align: left;
         @if not $internal-borders {
             border-bottom: $gray4-border;
+            @include dark-mode() {
+                border-bottom: $dkgray4-border;
+            }
         }
 
         background-color: $gray2;
-        color: $black1;
+        color: $gray5;
         @include dark-mode() {
-            background-color: #0f0f0f;
+            background-color: $dkgray2;
+            color: $dkgray5;
         }
 
         &:hover {
             background-color: $gray4;
             @include dark-mode() {
-                background-color: rgba(255, 255, 255, .05);
+                background-color: $dkgray4;
             }
         }
     }
