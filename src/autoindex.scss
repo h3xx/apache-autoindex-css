@@ -41,14 +41,14 @@ body {
 #indextitle {
     color: $black1;
     padding-bottom: 1em;
-    border-bottom: $gray5-border;
+    border-bottom: $gray4-border;
 }
 
 #indexlist {
     border-collapse: separate;
     border-radius: .25rem;
     border-spacing: 0;
-    border: $gray5-border;
+    border: $gray4-border;
     box-shadow: none;
     background-color: #fff;
     @include dark-mode() {
@@ -57,7 +57,7 @@ body {
     }
 
     a {
-        color: $gray4;
+        color: $gray3;
         @include dark-mode() {
             color: rgba(255, 255, 255, .8);
         }
@@ -110,7 +110,7 @@ body {
 
         // Row styling
         &.even td {
-            background-color: $white;
+            background-color: $white1;
         }
         &.odd td {
             background-color: $gray1;
@@ -125,7 +125,7 @@ body {
         padding: 0.4em 0.6em;
 
         @if $internal-borders {
-            border-top: $gray5-border;
+            border-top: $gray4-border;
         }
 
         &.indexcolicon {
@@ -140,7 +140,7 @@ body {
         }
 
         &:not(.indexcolname) {
-            border-left: $gray5-border;
+            border-left: $gray4-border;
         }
 
         // make links fill up the whole table cell
@@ -158,17 +158,17 @@ body {
         padding-bottom: 0.7em;
         // text-align: left;
         @if not $internal-borders {
-            border-bottom: $gray5-border;
+            border-bottom: $gray4-border;
         }
 
-        background-color: $gray3;
+        background-color: $gray2;
         color: $black1;
         @include dark-mode() {
             background-color: #0f0f0f;
         }
 
         &:hover {
-            background-color: $gray5;
+            background-color: $gray4;
             @include dark-mode() {
                 background-color: rgba(255, 255, 255, .05);
             }
