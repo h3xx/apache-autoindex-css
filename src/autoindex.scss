@@ -150,10 +150,9 @@ body {
         font-weight: 700;
         text-transform: none;
         // vertical-align: middle;
-        padding: 0.7em 0.8em;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
         // text-align: left;
-        padding-left: 0.6em;
-        padding-right: 0.6em;
         background-color: $gray3;
         color: $black1;
         @include dark-mode() {
