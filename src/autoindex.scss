@@ -157,6 +157,12 @@ body {
             }
         }
 
+        @include small-screen() {
+            &.indexcollastmod {
+                display: none;
+            }
+        }
+
         // make links fill up the whole table cell
         a {
             display: block;
