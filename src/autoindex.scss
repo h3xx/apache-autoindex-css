@@ -51,7 +51,7 @@ body {
 
 #indexlist {
     border-collapse: separate;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     border-spacing: 0;
     box-shadow: none;
     border: $gray4-border;
@@ -130,7 +130,7 @@ body {
     }
 
     th, td {
-        transition: background .2s ease, border-color .2s ease, color .2s ease;
+        transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
         text-align: left;
         vertical-align: middle;
         padding: 0.4em 0.6em;
