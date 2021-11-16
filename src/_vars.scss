@@ -10,9 +10,9 @@ $gray4-border: 1px solid $gray4 !default;
 $gray5: #373737 !default;
 
 $dkgray0: $gray5;
-$dkgray1: invert($gray1) !default;
-$dkgray2: invert($gray2) !default;
-$dkgray3: invert($gray3) !default;
-$dkgray4: invert($gray4) !default;
-$dkgray4-border: 1px solid $dkgray4 !default;
+$dkgray1: lighten(invert($gray1), 10%) !default;
+$dkgray2: lighten(invert($gray2), 5%) !default;
+$dkgray3: lighten(invert($gray3), 10%) !default;
+$dkgray4: lighten(invert($gray4), 5%) !default;
+$dkgray4-border: 1px solid lighten($dkgray4, 5%) !default;
 $dkgray5: $gray0 !default;
