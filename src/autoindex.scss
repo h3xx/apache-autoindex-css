@@ -203,4 +203,12 @@ body {
         }
     }
 
+    td {
+        &.indexcolicon {
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+
 }
