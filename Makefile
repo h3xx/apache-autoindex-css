@@ -1,6 +1,6 @@
 TARGETS = autoindex.css
 
-autoindex.css: src/autoindex.scss
+autoindex.css: src/autoindex.scss $(wildcard src/*.scss)
 
 %.css:
 	sassc -t compressed $< > $@
