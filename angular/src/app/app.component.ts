@@ -5,7 +5,7 @@ import {
 
 @Component({
     encapsulation: ViewEncapsulation.None,
-    selector: 'app-root',
+    selector: '[app-root]',
     styleUrls: ['./app.component.scss'],
     templateUrl: './app.component.html',
 })
