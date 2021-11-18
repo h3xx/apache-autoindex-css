@@ -1,17 +1,16 @@
+@import 'bootstrap-functions';
+@import 'bootstrap-variables';
+@import 'bootstrap-breakpoints';
+@import 'bootstrap-color-scheme';
+
 @import 'vars';
 
 @mixin dark-mode() {
     @if $always-dark-mode {
         @content;
     } @else {
-        @media (prefers-color-scheme: dark) {
+        @include color-scheme(dark) {
             @content;
         }
-    }
-}
-
-@mixin small-screen() {
-    @media (max-width: 768px) {
-        @content;
     }
 }

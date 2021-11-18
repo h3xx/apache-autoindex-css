@@ -31,7 +31,7 @@ img {
 
 body {
     padding: 20px;
-    @include small-screen() {
+    @include media-breakpoint-down(sm) {
         padding: 10px;
     }
 }
@@ -161,7 +161,7 @@ body {
             }
         }
 
-        @include small-screen() {
+        @include media-breakpoint-down(sm) {
             &.indexcollastmod {
                 display: none;
             }
