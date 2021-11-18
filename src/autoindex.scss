@@ -48,7 +48,7 @@ body {
     border-bottom: $gray4-border;
     color: $gray5;
     @include dark-mode() {
-        border-bottom: $dkgray4-border;
+        border-bottom-color: $dkgray4-border-color;
         color: $dkgray5;
     }
 }
@@ -61,7 +61,7 @@ body {
     border: $gray4-border;
     background-color: $gray0;
     @include dark-mode() {
-        border: $dkgray4-border;
+        border-color: $dkgray4-border-color;
         background-color: $dkgray0;
     }
 
@@ -142,7 +142,7 @@ body {
         @if $internal-borders {
             border-top: $gray4-border;
             @include dark-mode() {
-                border-top: $dkgray4-border;
+                border-top-color: $dkgray4-border-color;
             }
         }
 
@@ -157,7 +157,7 @@ body {
         &:not(.indexcolname) {
             border-left: $gray4-border;
             @include dark-mode() {
-                border-left: $dkgray4-border;
+                border-left-color: $dkgray4-border-color;
             }
         }
 
@@ -184,7 +184,7 @@ body {
         @if not $internal-borders {
             border-bottom: $gray4-border;
             @include dark-mode() {
-                border-bottom: $dkgray4-border;
+                border-bottom-color: $dkgray4-border-color;
             }
         }
 
