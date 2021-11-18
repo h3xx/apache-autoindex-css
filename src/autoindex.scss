@@ -29,13 +29,6 @@ img {
     outline: none;
 }
 
-body {
-    padding: 20px;
-    @include media-breakpoint-down(sm) {
-        padding: 10px;
-    }
-}
-
 #indextitle,
 #indexlist {
     margin: 1em auto;
@@ -47,6 +40,9 @@ body {
     padding-bottom: 1em;
     border-bottom: $gray4-border;
     color: $gray5;
+    @include media-breakpoint-up(sm) {
+        margin-top: 2em;
+    }
     @include dark-mode() {
         border-bottom-color: $dkgray4-border-color;
         color: $dkgray5;
