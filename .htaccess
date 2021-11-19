@@ -1,4 +1,4 @@
-<FilesMatch "^\.git.*|Makefile$">
+<FilesMatch "^\.git.*|Makefile|angular$">
 	Deny from all
 </FilesMatch>
 AddDescription "Directory listing styles" autoindex.css
@@ -9,4 +9,5 @@ IndexIgnore \
 	.gitmodules \
 	.htaccess \
 	Makefile \
+	angular \
 	src
