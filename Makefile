@@ -1,9 +1,12 @@
+SASSC = sassc
+SASSC_ARGS = -t compressed
+
 TARGETS = autoindex.css
 
 autoindex.css: src/autoindex.scss $(wildcard src/*.scss)
 
 %.css:
-	sassc -t compressed $< > $@
+	$(SASSC) $(SASSC_ARGS) $< > $@
 
 all: $(TARGETS)
 
