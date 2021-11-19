@@ -9,8 +9,10 @@
     @if $always-dark-mode {
         @content;
     } @else {
-        @include color-scheme(dark) {
-            @content;
+        @if not $always-light-mode {
+            @include color-scheme(dark) {
+                @content;
+            }
         }
     }
 }
