@@ -38,15 +38,35 @@ img {
 
 #indextitle {
     padding-bottom: 1em;
-    border-bottom: $gray4-border;
     color: $gray5;
     @include media-breakpoint-up(sm) {
         margin-top: 2em;
     }
     @include dark-mode() {
-        border-bottom-color: $dkgray4-border-color;
         color: $dkgray5;
     }
+
+    &::before {
+        content: '';
+        display: block;
+        height: 3em;
+        @include media-breakpoint-up(sm) {
+            height: 4em;
+        }
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        border-bottom: $gray4-border;
+        @include gradient-top($gray4-border-color, $gray2, $gray1);
+        @include dark-mode() {
+            @include gradient-top($dkgray4-border-color, $dkgray2, $dkgray1);
+            border-bottom-color: $dkgray4-border-color;
+        }
+    }
+
 }
 
 #indexlist {
