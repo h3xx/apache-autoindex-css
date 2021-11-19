@@ -130,6 +130,7 @@ img {
     }
 
     th, td {
+        padding: 0;
         transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
         text-align: left;
         vertical-align: middle;
@@ -164,7 +165,6 @@ img {
     }
 
     th {
-        padding: 0;
         font-weight: 700;
         @if not $internal-borders {
             border-bottom: $gray4-border;
@@ -193,15 +193,10 @@ img {
     }
 
     td {
-        padding: 0 0.6em;
         &.indexcolicon {
             img {
                 vertical-align: middle;
             }
-        }
-        &.indexcolicon,
-        &.indexcolname {
-            padding: 0;
         }
 
         &.indexcolicon {
@@ -210,6 +205,15 @@ img {
             a {
                 padding-right: 0;
             }
+        }
+
+        // These cells aren't taken up by a link, ergo the padding needs to
+        // come from the table cell itself
+        &:not(
+            .indexcolname,
+            .indexcolicon
+        ) {
+            padding: 0 0.6em;
         }
 
     }
