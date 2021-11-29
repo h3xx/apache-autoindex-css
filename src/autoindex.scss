@@ -175,6 +175,11 @@ img {
             }
         }
 
+    }
+
+    th,
+    td.indexcolicon,
+    td.indexcolname {
         // make links fill up the whole table cell
         a {
             display: block;
