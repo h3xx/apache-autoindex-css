@@ -1,5 +1,8 @@
 # Apache `mod_autoindex` CSS
 
+![Light mode](../flair/light-mode.png)
+![Dark mode](../flair/dark-mode.png)
+
 ## Building
 
 Run `make` to generate `autoindex.css`.
