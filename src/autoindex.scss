@@ -230,6 +230,11 @@ img {
             }
         }
 
+        &.indexcollastmod {
+            // Prevent breaking timestamp
+            white-space: nowrap;
+        }
+
         // These cells aren't taken up by a link, ergo the padding needs to
         // come from the table cell itself
         &:not(
