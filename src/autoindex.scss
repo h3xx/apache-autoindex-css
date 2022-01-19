@@ -219,16 +219,14 @@ img {
 
     td {
         &.indexcolicon {
-            img {
-                vertical-align: middle;
-            }
-        }
-
-        &.indexcolicon {
             width: 32px;
 
             a {
                 padding-right: 0;
+            }
+
+            img {
+                vertical-align: middle;
             }
         }
 
