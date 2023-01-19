@@ -1,4 +1,4 @@
-# Apache `mod_autoindex` CSS
+# Apache Modern Autoindex
 
 This project has moved to Codeberg:
-https://codeberg.org/h3xx/apache-autoindex-css
+https://codeberg.org/h3xx/apache-modern-autoindex
